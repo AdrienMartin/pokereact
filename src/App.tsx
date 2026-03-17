@@ -3,6 +3,7 @@ import "./App.css";
 import { PokemonsPreferesProvider } from "./contexts/PokemonsPreferesContext";
 import DetailsPokemon from "./pages/DetailsPokemon";
 import FormResult from "./pages/FormResult";
+import Formulaire from "./pages/Formulaire";
 import Liste from "./pages/Liste";
 import NotFound from "./pages/NotFound";
 import Pokemon from "./pages/Pokemon";
@@ -15,7 +16,8 @@ function App() {
       <BrowserRouter>
         <nav>
           <Link to="/list">Pokemon</Link> |{" "}
-          <Link to="/preferes">Pokémons préférés</Link>{" "}
+          <Link to="/preferes">Pokémons préférés</Link> |{" "}
+          <Link to="/formulaire">Formulaire</Link>{" "}
         </nav>
 
         <Routes>
@@ -26,6 +28,7 @@ function App() {
           <Route path="/list" element={<Liste />} />
           <Route path="/details" element={<DetailsPokemon />} />
           <Route path="/preferes" element={<PokemonsPreferes />} />
+          <Route path="/formulaire" element={<Formulaire />} />
 
           <Route path="*" element={<Navigate to="/404" replace />} />
         </Routes>

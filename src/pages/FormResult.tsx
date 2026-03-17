@@ -6,8 +6,8 @@ export default function FormResult() {
 
   return (
     <>
-      <div>{data.exampleRequired}</div>
-      <div>{data.gender}</div>
+      <div>{data.nom}</div>
+      <div>{data.prenom}</div>
       <div>{data.age}</div>
     </>
   );
